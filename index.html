@@ -11,11 +11,13 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="manifest" href="images/site.webmanifest">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
   <h1>Breakfast</h1>
   <p>This website will talk about different breakfasts and how delicious they are.</p>
+
   <header>
     <nav>
       <ul>
@@ -25,9 +27,20 @@
       </ul>
     </nav>
   </header>
+  <picture>
+    <source media="(min-width: 801px)" srcset="images/hero-breakfast-2000px.jpg">
+    <source media="(min-width: 401px)" srcset="images/hero-breakfast-800px.jpg">
+    <source media="(max-width: 400px)" srcset="images/hero-breakfast-400px.jpg">
+    <img src="images/hero-breakfast-800px.jpg"
+      alt="Table set with with plates of waffles, toast, orange juice, and hot cocoa.">
+  </picture>
   <main>
     <article>
       <h2>Pancakes</h2>
+      <svg viewBox="0 0 120 120" width="480" height="480">
+        <circle cx="60" cy="60" r="20" fill="none" stroke="#355070" stroke-width="4" />
+        <line x1="74" y1="74" x2="86" y2="86" stroke="#355070" stroke-width="4" />
+      </svg>
       <p>Pancakes are delicious. You can have them with lots of different toppings.</p>
       <figure>
         <img src="images/pancakeswithblueberries.jpg"
